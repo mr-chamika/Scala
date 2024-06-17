@@ -1,11 +1,3 @@
-object main{
-
-  def area(r:Int)=math.Pi*r*r
-
-  def main(args:Array[String])={
+def area(r:Int)=math.Pi*r*r
   
-    println("Area is = " + area(5))
-
-  }
-
-}
+println("Area is = " + area(5))
