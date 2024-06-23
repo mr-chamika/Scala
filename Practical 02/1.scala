@@ -7,7 +7,7 @@ def fun()={
   val g = 4.0f
   val c = 'X'
 
-  println("\n(a) = " + k+12*m)
+  println("\n(a) = " + (k+12*m))
   println("(b) = " + m/j)
   println("(c) = " + n%j)
   println("(d) = " + m/j*j)
