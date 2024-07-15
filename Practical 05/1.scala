@@ -1,8 +1,8 @@
-var list = List.empty[String]
 var i=0
 
-def getProductList() = {
+def getProductList():List[String] = {
 
+  var list = List.empty[String]
   var x = ""
 
   while(x != "done"){
@@ -12,11 +12,14 @@ def getProductList() = {
  
   if(x != "done"){
 
-  list = list :+ x
+  list=list:+x
 
   }
 
   }
+
+  list//returning the list
+
 
 }
 
@@ -32,6 +35,6 @@ def printProductList(list:List[String])={
 
 def getTotalProducts(list:List[String])= list.length
 
-getProductList();
-printProductList(list);
-println("Total number of products in the list : " + getTotalProducts(list))
+var list = getProductList();//get products to a list and return the list
+printProductList(list);//print the list with positions
+println("Total number of products in the list : " + getTotalProducts(list)) //printing the size of the list
